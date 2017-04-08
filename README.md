@@ -3,6 +3,7 @@
 
 ### 1. Put all the file into common folder, not the frontend folder
 common/utils
+
 common/models
 
 ### 2. Change the common/models/User.php
