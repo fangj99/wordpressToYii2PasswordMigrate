@@ -21,7 +21,7 @@ class User extends UserIdentity
     public function validatePassword($password)
     {
 		
-		// //lance changed for wordpress
+		
 		$wp_check = new WpCheckPassword();
 		return $wp_check->wp_check_password($password, $this->password_hash);
         //return Yii::$app->getSecurity()->validatePassword($password, $this->password_hash);
