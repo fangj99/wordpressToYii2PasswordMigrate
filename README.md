@@ -9,8 +9,8 @@ common/models
 ### 2. Change the common/models/User.php
 
 ```
-use common\models\UserIdentity;  //lance added for wordpress
-use common\utils\WpCheckPassword;  //lance added for wordpress
+use common\models\UserIdentity;  
+use common\utils\WpCheckPassword;  
 
 class User extends UserIdentity
 
