@@ -30,7 +30,7 @@ class User extends UserIdentity
 
 ### 3. Change the configure parameters in WpCookieCheck.php according to the wp-config.php
 
-### 4. import all the wordpress database's table user to yii2's table user
+### 4. import all the wordpress's table 'user' to yii2's table 'user'
 
 
 
