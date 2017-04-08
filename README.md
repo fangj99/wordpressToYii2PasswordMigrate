@@ -1,5 +1,5 @@
 
-## Sample Codes 20170407:
+## Sample Codes 20170407, not using cookie login:
 
 ### 1. Put all the file into common folder, not the frontend folder
 common/utils
