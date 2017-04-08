@@ -32,7 +32,7 @@ class User extends UserIdentity
 
 ### 4. import all the wordpress's table 'user' to yii2's table 'user'
 
-
+### 5. Need change website url in WpCookieCheck.php when move to production server
 
 
 
