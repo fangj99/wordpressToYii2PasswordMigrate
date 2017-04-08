@@ -1,3 +1,38 @@
+
+## Sample Codes 20170407:
+
+### 1. Put all the file into common folder, not the frontend folder
+common/utils
+common/models
+
+### 2. Change the common/models/User.php
+
+```
+use common\models\UserIdentity;  //lance added for wordpress
+use common\utils\WpCheckPassword;  //lance added for wordpress
+
+class User extends UserIdentity
+
+```
+......
+
+```
+    public function validatePassword($password)
+    {
+		
+		// //lance changed for wordpress
+		$wp_check = new WpCheckPassword();
+		return $wp_check->wp_check_password($password, $this->password_hash);
+        //return Yii::$app->getSecurity()->validatePassword($password, $this->password_hash);
+    }
+```
+
+### 3. Change the configure parameters in WpCookieCheck.php according to the wp-config.php
+
+### 4. import all the wordpress database's table user to yii2's table user
+
+
+
 WordPress 2 Yii2 Password Migration
 ===================================
 
